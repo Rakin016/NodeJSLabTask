@@ -7,7 +7,11 @@ router.get('/', function(req, res){
 
 router.post('/', function(req, res){
 
-		res.send('post');
+	if(req.body.uname =="admin" && req.body.password =="admin"){
+		res.redirect('/admin');
+	}else{
+		res.send('invalid username/password');
+	}
 	
 });
 
