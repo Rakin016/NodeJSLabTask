@@ -3,6 +3,7 @@ var bodyParser 			= require('body-parser');
 var login 				= require('./controller/login');
 var admin 				= require('./controller/admin');
 var addEmployee 		= require('./controller/addEmployee');
+var allEmployeeList 	= require('./controller/allEmployeeList');
 
 var company_app 		= express();
 
@@ -13,6 +14,7 @@ company_app.use(bodyParser());
 company_app.use('/login', login);
 company_app.use('/admin', admin);
 company_app.use('/addEmployee', addEmployee);
+company_app.use('/allEmployeeList', allEmployeeList);
 
 
 

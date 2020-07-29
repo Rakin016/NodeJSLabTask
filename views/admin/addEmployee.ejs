@@ -17,44 +17,33 @@
 						<td><input type="text" name="address"></td>
 					</tr>
 					<tr>
-						<td>DOB:</td>
-						<td><input type="text" name="dob"></td>
-					</tr>
-					<tr>
-						<td>Blood group:</td>
-						<td><input type="text" name="bgrp"></td>
-					</tr>
-					<tr>
-						<td>Qualifications:</td>
-						<td><input type="text" name="qualif"></td>
-					</tr>
-					<tr>
 						<td>Phone:</td>
 						<td><input type="text" name="phone"></td>
 					</tr>
 					<tr>
-						<td>Gender:</td>
-						<td><input type="radio" id="male" name="gender" value="male">
-							<label for="male">Male</label><br>
-							<input type="radio" id="female" name="gender" value="female">
-							<label for="female">Female</label><br>
-							<input type="radio" id="other" name="gender" value="other">
-							<label for="other">Other</label>
-						</td>
-					</tr>
+          				<td>Gender:</td>
+          				<td>
+            				<select name='gender'>
+              				<option value="Male"> Male </option>
+              				<option value="Female"> Female </option>
+              				<option value="Other"> Other </option>
+            				</select>
+          				</td>
+        			</tr>
 
-					<tr>
-						<td>Username</td>
-						<td><input type="text" name="eUname"></td>
-					</tr>
-					<tr>
-						<td>Password</td>
-						<td><input type="password" name="ePassword"></td>
-					</tr>
-					<tr>
-						<td></td>
-						<td><input type="submit" name="submit" value="Submit"></td>
-					</tr>
+        			<tr>
+          				<td>Designation: </td>
+          				<td>
+            				<select name='des'>
+              				<option value="Admin"> Admin </option>
+             				<option value="Employee"> Employee </option>
+            				</select>
+          				</td>
+        			</tr>
+
+        			<tr>
+          				<td colsapn='2' allign='center'> <input type='button' name='add' value='ADD'> </td>
+        			</tr>
 				</table>
 			</fieldset>
 		</form>
